@@ -52,8 +52,10 @@ class MyProgramm {
 		System.out.println("Handled exception correctly");
 
 		// Composites
-		Food chappie = new CanOfDogFood(new Apple().getCalories()
-				+ new Potato().getCalories() + new Beef().getCalories());
+		CanOfDogFood chappie = new CanOfDogFood();
+		chappie.addIngredient(new Apple());
+		chappie.addIngredient(new Potato());
+		chappie.addIngredient(new Beef());
 		Dog dog3 = new Dog("Dog3");
 		dog3.feed(chappie);
 		System.out.println("Dog " + dog1.name + " has eaten calories: "
