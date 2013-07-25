@@ -31,5 +31,9 @@ class MyProgramm {
 		apple.calories = 42;
 		Food eaten = rex.hasEaten();
 		System.out.println(eaten.getCalories()); // Is the answer 23 or 42?
+
+		// Dog rex is seen as a Mammal here, thus cannot bark
+		//rex.bark(); // commented, but would yield compiler error
+		((Dog) rex).bark();
 	}
 }
