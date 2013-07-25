@@ -26,7 +26,7 @@ class MyProgramm {
 
 		// call by reference
 		apple = new Apple(23);
-		Dog rex = new Dog("Rex");
+		Mammal rex = new Dog("Rex");
 		rex.feed(apple);
 		apple.calories = 42;
 		Food eaten = rex.hasEaten();
