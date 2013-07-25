@@ -33,7 +33,13 @@ class MyProgramm {
 		System.out.println(eaten.getCalories()); // Is the answer 23 or 42?
 
 		// Dog rex is seen as a Mammal here, thus cannot bark
-		//rex.bark(); // commented, but would yield compiler error
+		// rex.bark(); // commented, but would yield compiler error
 		((Dog) rex).bark();
+
+		// Sheeps are vegetarian
+		Sheep sheep = new Sheep("Shawn");
+		sheep.feed(new Apple());
+		sheep.feed(new Potato());
+		sheep.feed(new Beef()); // Sheeps better not eat meat (see BSE)
 	}
 }
