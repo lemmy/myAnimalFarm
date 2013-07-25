@@ -6,16 +6,22 @@ class Dog {
 
 	String name;
 	int calories;
+	Food food;
 
-	public String bark() {
+	String bark() {
 		return "Wuff Wuff";
 	}
 
-	void feed(Food food) {
-		calories = calories + food.getCalories();
+	void feed(Food aFood) {
+		food = aFood;
+		calories = calories + aFood.getCalories();
 	}
 
 	int getCalories() {
 		return calories;
+	}
+
+	Food hasEaten() {
+		return food;
 	}
 }

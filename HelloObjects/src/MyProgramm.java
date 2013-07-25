@@ -17,5 +17,19 @@ class MyProgramm {
 
 		System.out.println("Dog " + dog1.name + " has eaten calories: "
 				+ dog1.getCalories());
+
+		// call by value
+		int calories = 23;
+		Apple apple = new Apple(calories);
+		calories = 42;
+		System.out.println(apple.getCalories()); // Is the answer 23 or 42?
+
+		// call by reference
+		apple = new Apple(23);
+		Dog rex = new Dog("Rex");
+		rex.feed(apple);
+		apple.calories = 42;
+		Food eaten = rex.hasEaten();
+		System.out.println(eaten.getCalories()); // Is the answer 23 or 42?
 	}
 }

@@ -1,6 +1,6 @@
 class Food {
 
-	final int calories;
+	int calories;
 
 	Food(int aCalories) {
 		this.calories = aCalories;
