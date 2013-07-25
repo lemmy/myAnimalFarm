@@ -2,14 +2,14 @@ abstract class Mammal {
 
 	String name;
 	int calories;
-	Food food;
+	IFood food;
 
 	Mammal(String aName) {
 		super();
 		name = aName;
 	}
 
-	void feed(Food aFood) {
+	void feed(IFood aFood) {
 		if (aFood instanceof Beef) {
 			if (!(this instanceof Omnivore)) {
 				throw new DisgustingException("Only Omnivore eat Beef");
@@ -27,7 +27,7 @@ abstract class Mammal {
 		return calories;
 	}
 
-	Food hasEaten() {
+	IFood hasEaten() {
 		return food;
 	}
 

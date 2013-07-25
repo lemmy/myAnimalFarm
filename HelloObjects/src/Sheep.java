@@ -4,7 +4,7 @@ class Sheep extends Vegetarian {
 		super(aName);
 	}
 
-	void feed(Food aFood) {
+	void feed(IFood aFood) {
 		if (aFood instanceof Beef) {
 			throw new DisgustingException("Do not feed Beef to Sheep!");
 		} else {

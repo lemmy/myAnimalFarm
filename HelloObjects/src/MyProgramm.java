@@ -30,7 +30,7 @@ class MyProgramm {
 		Mammal rex = new Dog("Rex");
 		rex.feed(apple);
 		apple.calories = 42;
-		Food eaten = rex.hasEaten();
+		IFood eaten = rex.hasEaten();
 		System.out.println(eaten.getCalories()); // Is the answer 23 or 42?
 
 		// Dog rex is seen as a Mammal here, thus cannot bark

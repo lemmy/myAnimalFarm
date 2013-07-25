@@ -1,4 +1,4 @@
-abstract class Food {
+abstract class Food implements IFood {
 
 	int calories;
 
@@ -6,7 +6,8 @@ abstract class Food {
 		this.calories = aCalories;
 	}
 
-	int getCalories() {
+	@Override
+	public int getCalories() {
 		return calories;
 	}
 }
