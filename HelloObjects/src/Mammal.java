@@ -1,12 +1,18 @@
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
 abstract class Mammal {
 
 	String name;
 	int calories;
-	IFood food;
+	List<IFood> foods;
+	int weight = 50;
 
 	Mammal(String aName) {
 		super();
 		name = aName;
+		foods = new ArrayList<IFood>();
 	}
 
 	void feed(IFood aFood) {
@@ -14,21 +20,21 @@ abstract class Mammal {
 			if (!(this instanceof Omnivore)) {
 				throw new DisgustingException("Only Omnivore eat Beef");
 			} else {
-				food = aFood;
+				foods.add(aFood);
 				calories = calories + aFood.getCalories();
 			}
 		} else {
-			food = aFood;
+			foods.add(aFood);
 			calories = calories + aFood.getCalories();
 		}
 	}
 
-	int getCalories() {
-		return calories;
+	Collection<IFood> hasEaten() {
+		return foods;
 	}
 
-	IFood hasEaten() {
-		return food;
+	int weight() {
+		return weight;
 	}
 
 	abstract boolean isVegetarian();

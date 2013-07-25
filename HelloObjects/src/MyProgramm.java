@@ -16,9 +16,6 @@ class MyProgramm {
 		// Does not work anymore due to abstract type
 		// dog1.feed(new Food(10));
 
-		System.out.println("Dog " + dog1.name + " has eaten calories: "
-				+ dog1.getCalories());
-
 		// call by value
 		int calories = 23;
 		Apple apple = new Apple(calories);
@@ -30,8 +27,6 @@ class MyProgramm {
 		Mammal rex = new Dog("Rex");
 		rex.feed(apple);
 		apple.calories = 42;
-		IFood eaten = rex.hasEaten();
-		System.out.println(eaten.getCalories()); // Is the answer 23 or 42?
 
 		// Dog rex is seen as a Mammal here, thus cannot bark
 		// rex.bark(); // commented, but would yield compiler error
@@ -58,7 +53,5 @@ class MyProgramm {
 		chappie.addIngredient(new Beef());
 		Dog dog3 = new Dog("Dog3");
 		dog3.feed(chappie);
-		System.out.println("Dog " + dog1.name + " has eaten calories: "
-				+ dog3.getCalories());
 	}
 }
