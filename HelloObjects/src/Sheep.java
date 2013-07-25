@@ -6,8 +6,7 @@ class Sheep extends Mammal {
 
 	void feed(Food aFood) {
 		if (aFood instanceof Beef) {
-			// TODO throw up
-			System.out.println("Sheep do not eat meat");
+			throw new DisgustingException("Do not feed Beef to Sheep!");
 		} else {
 			super.feed(aFood);
 		}
