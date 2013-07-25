@@ -10,8 +10,17 @@ abstract class Mammal {
 	}
 
 	void feed(Food aFood) {
-		food = aFood;
-		calories = calories + aFood.getCalories();
+		if (aFood instanceof Beef) {
+			if (!(this instanceof Omnivore)) {
+				throw new DisgustingException("Only Omnivore eat Beef");
+			} else {
+				food = aFood;
+				calories = calories + aFood.getCalories();
+			}
+		} else {
+			food = aFood;
+			calories = calories + aFood.getCalories();
+		}
 	}
 
 	int getCalories() {

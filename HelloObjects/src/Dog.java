@@ -1,4 +1,4 @@
-class Dog extends Mammal {
+class Dog extends Mammal implements Omnivore {
 
 	Dog(String aName) {
 		super(aName);
