@@ -9,7 +9,7 @@ class Sheep extends Mammal {
 			// TODO throw up
 			System.out.println("Sheep do not eat meat");
 		} else {
-			calories += aFood.getCalories();
+			super.feed(aFood);
 		}
 	}
 }
