@@ -1,2 +1,3 @@
 class Dog {
+	String name;
 }
