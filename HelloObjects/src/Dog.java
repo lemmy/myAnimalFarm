@@ -14,4 +14,8 @@ class Dog {
 	void feed(Food food) {
 		calories = calories + food.getCalories();
 	}
+
+	int getCalories() {
+		return calories;
+	}
 }
