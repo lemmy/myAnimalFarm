@@ -5,4 +5,8 @@ class Dog {
 	}
 
 	String name;
+
+	public String bark() {
+		return "Wuff Wuff";
+	}
 }

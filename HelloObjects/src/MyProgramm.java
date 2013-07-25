@@ -4,5 +4,8 @@ class MyProgramm {
 
 		// Print the instance's name
 		System.out.println(dog1.name);
+
+		// Dogs can bark
+		System.out.println(dog1.bark());
 	}
 }
