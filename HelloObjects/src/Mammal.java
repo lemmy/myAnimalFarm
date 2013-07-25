@@ -1,5 +1,5 @@
-import java.util.ArrayList;
 import java.util.Collection;
+import java.util.LinkedList;
 import java.util.List;
 
 abstract class Mammal {
@@ -12,7 +12,7 @@ abstract class Mammal {
 	Mammal(String aName) {
 		super();
 		name = aName;
-		foods = new ArrayList<IFood>();
+		foods = new LinkedList<IFood>();
 	}
 
 	void feed(IFood aFood) {
