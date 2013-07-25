@@ -1,4 +1,4 @@
-class Dog extends Mammal implements Omnivore {
+class Dog extends Mammal implements Omnivore, Predator {
 
 	Dog(String aName) {
 		super(aName);
@@ -13,7 +13,11 @@ class Dog extends Mammal implements Omnivore {
 	}
 
 	public void hunt(Mammal m) {
-		// TODO hunt an animal?
-		// hunt itself?
+		if (m instanceof Predator) {
+			// Do not hunt other predators
+			return;
+		} else {
+			// TODO
+		}
 	}
 }

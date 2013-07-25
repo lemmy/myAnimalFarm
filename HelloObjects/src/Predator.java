@@ -1,0 +1,3 @@
+interface Predator {
+	// Marker interface
+}
