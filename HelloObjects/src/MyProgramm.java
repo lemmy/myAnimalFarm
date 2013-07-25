@@ -14,7 +14,7 @@ class MyProgramm {
 		dog1.feed(new Beef());
 
 		// Does not work anymore due to abstract type
-		//dog1.feed(new Food(10));
+		// dog1.feed(new Food(10));
 
 		System.out.println("Dog " + dog1.name + " has eaten calories: "
 				+ dog1.getCalories());
@@ -50,5 +50,13 @@ class MyProgramm {
 					.println("Sheep do not like to eat some Food. Which one?");
 		}
 		System.out.println("Handled exception correctly");
+
+		// Composites
+		Food chappie = new CanOfDogFood(new Apple().getCalories()
+				+ new Potato().getCalories() + new Beef().getCalories());
+		Dog dog3 = new Dog("Dog3");
+		dog3.feed(chappie);
+		System.out.println("Dog " + dog1.name + " has eaten calories: "
+				+ dog3.getCalories());
 	}
 }
