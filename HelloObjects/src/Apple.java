@@ -1,4 +1,4 @@
-class Apple extends Food {
+class Apple extends VegetarianFood {
 
 	Apple() {
 		// delegates to second constructor

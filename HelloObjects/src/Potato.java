@@ -1,4 +1,4 @@
-class Potato extends Food {
+class Potato extends VegetarianFood {
 
 	Potato() {
 		super(10);

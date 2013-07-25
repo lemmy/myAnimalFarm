@@ -19,4 +19,13 @@ class CanOfDogFood implements IFood {
 		}
 		return sum;
 	}
+
+	@Override
+	public boolean isVegetarian() {
+		boolean result = true;
+		for (IFood ingrediant : this.ingrediants) {
+			result &= ingrediant.isVegetarian();
+		}
+		return result;
+	}
 }

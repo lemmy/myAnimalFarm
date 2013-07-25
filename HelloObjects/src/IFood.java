@@ -10,4 +10,5 @@ interface IFood {
 
 	abstract int getCalories();
 
+	abstract boolean isVegetarian();
 }

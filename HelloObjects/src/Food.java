@@ -10,4 +10,10 @@ abstract class Food implements IFood {
 	public int getCalories() {
 		return calories;
 	}
+
+	@Override
+	public boolean isVegetarian() {
+		// By default all food is non-vegetarian
+		return false;
+	}
 }
