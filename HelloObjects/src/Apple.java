@@ -1,6 +1,11 @@
 class Apple extends Food {
 
 	Apple() {
-		super(5);
+		// delegates to second constructor
+		this(5);
+	}
+
+	Apple(int calories) {
+		super(calories);
 	}
 }
