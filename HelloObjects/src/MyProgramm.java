@@ -7,5 +7,8 @@ class MyProgramm {
 
 		// Dogs can bark
 		System.out.println(dog1.bark());
+
+		// Dogs need food (lets feed the dog)
+		dog1.feed(new Food(10));
 	}
 }
