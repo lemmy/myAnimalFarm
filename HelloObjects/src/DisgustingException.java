@@ -1,4 +1,4 @@
-class DisgustingException extends Exception {
+class DisgustingException extends RuntimeException {
 
 	DisgustingException(String string) {
 		super(string);
