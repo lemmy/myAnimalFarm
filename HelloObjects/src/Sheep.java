@@ -11,4 +11,8 @@ class Sheep extends Mammal {
 			super.feed(aFood);
 		}
 	}
+
+	boolean isVegetarian() {
+		return true;
+	}
 }

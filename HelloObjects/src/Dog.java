@@ -7,4 +7,8 @@ class Dog extends Mammal {
 	String bark() {
 		return "Wuff Wuff";
 	}
+
+	boolean isVegetarian() {
+		return false;
+	}
 }

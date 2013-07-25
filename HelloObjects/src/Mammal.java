@@ -1,4 +1,4 @@
-class Mammal {
+abstract class Mammal {
 
 	String name;
 	int calories;
@@ -21,4 +21,6 @@ class Mammal {
 	Food hasEaten() {
 		return food;
 	}
+
+	abstract boolean isVegetarian();
 }

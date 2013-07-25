@@ -1,4 +1,4 @@
-class Food {
+abstract class Food {
 
 	int calories;
 
