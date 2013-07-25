@@ -1,4 +1,4 @@
-class Sheep extends Mammal {
+class Sheep extends Vegetarian {
 
 	Sheep(String aName) {
 		super(aName);
@@ -10,9 +10,5 @@ class Sheep extends Mammal {
 		} else {
 			super.feed(aFood);
 		}
-	}
-
-	boolean isVegetarian() {
-		return true;
 	}
 }
