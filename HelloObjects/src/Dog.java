@@ -17,7 +17,8 @@ class Dog extends Mammal implements Omnivore, Predator {
 			// Do not hunt other predators
 			return;
 		} else {
-			// TODO
+			// adapter
+			this.feed(new Prey(m));
 		}
 	}
 }
