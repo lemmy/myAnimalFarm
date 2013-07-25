@@ -11,4 +11,9 @@ class Dog extends Mammal implements Omnivore {
 	boolean isVegetarian() {
 		return false;
 	}
+
+	public void hunt(Mammal m) {
+		// TODO hunt an animal?
+		// hunt itself?
+	}
 }
