@@ -1,3 +1,5 @@
+import java.util.Set;
+
 class MyProgramm {
 	public static void main(String[] args) {
 		Dog dog1 = new Dog("Waldo");
@@ -51,7 +53,14 @@ class MyProgramm {
 		chappie.addIngredient(new Apple());
 		chappie.addIngredient(new Potato());
 		chappie.addIngredient(new Beef());
+		chappie.addIngredient(new Beef());
 		Dog dog3 = new Dog("Dog3");
 		dog3.feed(chappie);
+
+		Set<Class<IFood>> ingredientInformation = chappie
+				.ingredientInformation();
+		for (Class<IFood> ing : ingredientInformation) {
+			System.out.println(ing);
+		}
 	}
 }

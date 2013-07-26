@@ -1,5 +1,7 @@
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 class CanOfDogFood implements IFood {
 	private List<Food> ingrediants; // has-a relationship
@@ -27,5 +29,14 @@ class CanOfDogFood implements IFood {
 			result &= ingrediant.isVegetarian();
 		}
 		return result;
+	}
+
+	Set<Class<IFood>> ingredientInformation() {
+		Set<Class<IFood>> set = new HashSet<Class<IFood>>();
+		for (Food f : ingrediants) {
+			Class<IFood> class1 = (Class<IFood>) f.getClass();
+			set.add(class1);
+		}
+		return set;
 	}
 }
