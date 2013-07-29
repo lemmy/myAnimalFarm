@@ -16,7 +16,7 @@ abstract class Mammal {
 	}
 
 	void feed(IFood aFood) {
-		if (aFood instanceof Beef) {
+		if (!aFood.isVegetarian()) {
 			if (!(this instanceof Omnivore)) {
 				throw new DisgustingException("Only Omnivore eat Beef");
 			} else {
