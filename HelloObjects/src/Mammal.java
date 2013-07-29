@@ -4,14 +4,13 @@ import java.util.List;
 
 abstract class Mammal {
 
-	String name;
-	int calories;
-	List<IFood> foods;
-	int weight = 50;
+	protected String name;
+	private List<IFood> foods;
+	private int weight = 50;
 
 	Mammal(String aName) {
 		super();
-		name = aName;
+		setName(aName);
 		foods = new LinkedList<IFood>();
 	}
 
@@ -21,11 +20,9 @@ abstract class Mammal {
 				throw new DisgustingException("Only Omnivore eat Beef");
 			} else {
 				foods.add(aFood);
-				calories = calories + aFood.getCalories();
 			}
 		} else {
 			foods.add(aFood);
-			calories = calories + aFood.getCalories();
 		}
 	}
 
@@ -41,7 +38,15 @@ abstract class Mammal {
 
 	@Override
 	public String toString() {
-		return "Mammal [name=" + name + ", foods=" + foods + ", weight="
+		return "Mammal [name=" + getName() + ", foods=" + foods + ", weight="
 				+ weight + "]";
+	}
+
+	String getName() {
+		return name;
+	}
+
+	void setName(String name) {
+		this.name = name;
 	}
 }

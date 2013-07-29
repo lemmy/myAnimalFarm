@@ -5,7 +5,7 @@ class MyProgramm {
 		Dog dog1 = new Dog("Waldo");
 
 		// Print the instance's name
-		System.out.println(dog1.name);
+		System.out.println(dog1.getName());
 
 		// Dogs can bark
 		System.out.println(dog1.bark());
@@ -28,7 +28,7 @@ class MyProgramm {
 		apple = new Apple(23);
 		Mammal rex = new Dog("Rex");
 		rex.feed(apple);
-		apple.calories = 42;
+		apple.setCalories(42);
 
 		// Dog rex is seen as a Mammal here, thus cannot bark
 		// rex.bark(); // commented, but would yield compiler error

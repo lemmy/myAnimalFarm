@@ -1,9 +1,9 @@
 abstract class Food implements IFood {
 
-	int calories;
+	private int calories;
 
 	Food(int aCalories) {
-		this.calories = aCalories;
+		this.setCalories(aCalories);
 	}
 
 	@Override
@@ -19,6 +19,10 @@ abstract class Food implements IFood {
 
 	@Override
 	public String toString() {
-		return "Food [calories=" + calories + "]";
+		return "Food [calories=" + getCalories() + "]";
+	}
+
+	void setCalories(int calories) {
+		this.calories = calories;
 	}
 }
