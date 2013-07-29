@@ -30,4 +30,19 @@ public class MammalTest {
 		}
 		Assert.fail("Sheeps expected to throw DisgustingException when fed with meat!");
 	}
+
+	@Test
+	public void testFeedMammalAsFood() {
+		IFood aFood = new Prey(new Sheep("TestFood"));
+
+		Mammal aMammal = new Sheep("TestSheep");
+		try {
+			aMammal.feed(aFood);
+		} catch (DisgustingException e) {
+			// Expected
+			return;
+		}
+		Assert.fail("Sheeps expected to throw DisgustingException when fed with meat!");
+	}
+
 }
