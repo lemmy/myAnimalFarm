@@ -62,5 +62,7 @@ class MyProgramm {
 		for (Class<IFood> ing : ingredientInformation) {
 			System.out.println(ing);
 		}
+
+		System.out.println(dog1);
 	}
 }

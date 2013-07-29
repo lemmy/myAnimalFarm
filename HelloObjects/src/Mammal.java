@@ -38,4 +38,10 @@ abstract class Mammal {
 	}
 
 	abstract boolean isVegetarian();
+
+	@Override
+	public String toString() {
+		return "Mammal [name=" + name + ", foods=" + foods + ", weight="
+				+ weight + "]";
+	}
 }

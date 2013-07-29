@@ -16,4 +16,9 @@ abstract class Food implements IFood {
 		// By default all food is non-vegetarian
 		return false;
 	}
+
+	@Override
+	public String toString() {
+		return "Food [calories=" + calories + "]";
+	}
 }
