@@ -1,4 +1,6 @@
-abstract class VegetarianFood extends Food {
+package my.animalfarm.greenhouse;
+
+public abstract class VegetarianFood extends Food {
 
 	public VegetarianFood(int aCalories) {
 		super(aCalories);

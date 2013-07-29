@@ -1,12 +1,14 @@
+package my.animalfarm.greenhouse;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-class CanOfDogFood implements IFood {
+public class CanOfDogFood implements IFood {
 	private List<Food> ingrediants; // has-a relationship
 
-	CanOfDogFood() {
+	public CanOfDogFood() {
 		this.ingrediants = new ArrayList<Food>();
 	}
 
@@ -31,7 +33,7 @@ class CanOfDogFood implements IFood {
 		return result;
 	}
 
-	Set<Class<IFood>> ingredientInformation() {
+	public Set<Class<IFood>> ingredientInformation() {
 		Set<Class<IFood>> set = new HashSet<Class<IFood>>();
 		for (Food f : ingrediants) {
 			Class<IFood> class1 = (Class<IFood>) f.getClass();

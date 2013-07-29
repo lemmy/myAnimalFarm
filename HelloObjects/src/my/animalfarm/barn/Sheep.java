@@ -1,6 +1,8 @@
-class Sheep extends Vegetarian {
+package my.animalfarm.barn;
 
-	Sheep(String aName) {
+public class Sheep extends Vegetarian {
+
+	public Sheep(String aName) {
 		super(aName);
 	}
 

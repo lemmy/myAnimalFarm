@@ -1,10 +1,12 @@
-class Dog extends Mammal implements Omnivore, Predator {
+package my.animalfarm.barn;
 
-	Dog(String aName) {
+public class Dog extends Mammal implements Omnivore, Predator {
+
+	public Dog(String aName) {
 		super(aName);
 	}
 
-	String bark() {
+	public String bark() {
 		return "Wuff Wuff";
 	}
 

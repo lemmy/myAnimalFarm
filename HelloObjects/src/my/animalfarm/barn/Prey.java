@@ -1,8 +1,13 @@
+package my.animalfarm.barn;
+
 import java.util.Collection;
 
-class Prey extends Food {
+import my.animalfarm.greenhouse.Food;
+import my.animalfarm.greenhouse.IFood;
 
-	Prey(Mammal aMammal) {
+public class Prey extends Food {
+
+	public Prey(Mammal aMammal) {
 		super(sumFoodFunction(aMammal.hasEaten()));
 	}
 

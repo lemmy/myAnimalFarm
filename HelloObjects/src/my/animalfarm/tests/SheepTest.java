@@ -1,3 +1,7 @@
+package my.animalfarm.tests;
+import my.animalfarm.barn.Dog;
+import my.animalfarm.barn.Sheep;
+
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,4 +1,14 @@
+package my.animalfarm;
 import java.util.Set;
+
+import my.animalfarm.barn.Dog;
+import my.animalfarm.barn.Mammal;
+import my.animalfarm.barn.Sheep;
+import my.animalfarm.greenhouse.Apple;
+import my.animalfarm.greenhouse.Beef;
+import my.animalfarm.greenhouse.CanOfDogFood;
+import my.animalfarm.greenhouse.IFood;
+import my.animalfarm.greenhouse.Potato;
 
 class MyProgramm {
 	public static void main(String[] args) {

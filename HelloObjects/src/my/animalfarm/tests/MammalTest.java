@@ -1,3 +1,15 @@
+package my.animalfarm.tests;
+import my.animalfarm.DisgustingException;
+import my.animalfarm.barn.Dog;
+import my.animalfarm.barn.Mammal;
+import my.animalfarm.barn.Prey;
+import my.animalfarm.barn.Sheep;
+import my.animalfarm.greenhouse.Apple;
+import my.animalfarm.greenhouse.Beef;
+import my.animalfarm.greenhouse.CanOfDogFood;
+import my.animalfarm.greenhouse.IFood;
+import my.animalfarm.greenhouse.Potato;
+
 import org.junit.Assert;
 import org.junit.Test;
 

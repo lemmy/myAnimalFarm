@@ -1,8 +1,10 @@
-abstract class Food implements IFood {
+package my.animalfarm.greenhouse;
+
+public abstract class Food implements IFood {
 
 	private int calories;
 
-	Food(int aCalories) {
+	protected Food(int aCalories) {
 		this.setCalories(aCalories);
 	}
 
@@ -22,7 +24,7 @@ abstract class Food implements IFood {
 		return "Food [calories=" + getCalories() + "]";
 	}
 
-	void setCalories(int calories) {
+	public void setCalories(int calories) {
 		this.calories = calories;
 	}
 }

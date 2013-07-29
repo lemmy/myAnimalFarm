@@ -1,8 +1,13 @@
+package my.animalfarm.barn;
+
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 
-abstract class Mammal {
+import my.animalfarm.DisgustingException;
+import my.animalfarm.greenhouse.IFood;
+
+public abstract class Mammal {
 
 	protected String name;
 	private List<IFood> foods;
@@ -14,7 +19,7 @@ abstract class Mammal {
 		foods = new LinkedList<IFood>();
 	}
 
-	void feed(IFood aFood) {
+	public void feed(IFood aFood) {
 		if (!aFood.isVegetarian()) {
 			if (!(this instanceof Omnivore)) {
 				throw new DisgustingException("Only Omnivore eat Beef");
@@ -42,7 +47,7 @@ abstract class Mammal {
 				+ weight + "]";
 	}
 
-	String getName() {
+	public String getName() {
 		return name;
 	}
 

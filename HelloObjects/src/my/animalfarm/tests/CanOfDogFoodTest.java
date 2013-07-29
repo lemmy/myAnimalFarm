@@ -1,3 +1,8 @@
+package my.animalfarm.tests;
+import my.animalfarm.greenhouse.Apple;
+import my.animalfarm.greenhouse.Beef;
+import my.animalfarm.greenhouse.CanOfDogFood;
+
 import org.junit.Assert;
 import org.junit.Test;
 
